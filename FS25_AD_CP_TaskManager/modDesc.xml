@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="79">
+    <author>Jules</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>AutoDrive/CoursePlay Task Manager</en>
+        <de>AutoDrive/CoursePlay Task-Manager</de>
+    </title>
+    <description>
+        <en><![CDATA[A task and sequence manager for AutoDrive and CoursePlay.]]></en>
+        <de><![CDATA[Ein Task- und Sequenz-Manager für AutoDrive und CoursePlay.]]></de>
+    </description>
+    <icon>icon.dds</icon>
+    <multiplayer supported="true"/>
+
+    <specializations>
+        <specialization name="ADCPTaskManager" className="ADCPTaskManager" filename="Specialization.lua" />
+    </specializations>
+
+    <vehicleTypes>
+        <type name="drivable" parent="baseDrivable">
+            <specialization name="ADCPTaskManager" />
+        </type>
+    </vehicleTypes>
+
+    <scripting>
+		<script name="TaskManager" file="TaskManager.lua"/>
+	</scripting>
+
+    <l10n>
+        <text name="ADCP_task_manager">
+            <en>AD/CP Task Manager</en>
+            <de>AD/CP Task-Manager</de>
+        </text>
+    </l10n>
+</modDesc>

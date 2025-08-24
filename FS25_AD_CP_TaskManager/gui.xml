@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI>
+    <GuiElement type="empty" profile="ui_ADCP_TaskManager">
+        <!-- Main window -->
+        <GuiElement type="bitmap" profile="frame" position="0 0" size="800 600" />
+        <GuiElement type="text" profile="text_white_20" text="AutoDrive/CoursePlay Task Manager" position="10 560" />
+
+        <!-- Task List -->
+        <GuiElement type="listbox" profile="listbox" name="taskList" position="20 100" size="400 400">
+            <!-- Listbox items will be added dynamically -->
+        </GuiElement>
+
+        <!-- Controls for task list -->
+        <GuiElement type="button" profile="button" name="addButton" text="Add" position="440 460" />
+        <GuiElement type="button" profile="button" name="editButton" text="Edit" position="440 420" />
+        <GuiElement type="button" profile="button" name="removeButton" text="Remove" position="440 380" />
+
+        <!-- Task editing section -->
+        <GuiElement type="text" profile="text_white" text="AutoDrive Destination:" position="440 300" />
+        <GuiElement type="comboBox" profile="comboBox" name="adDestinationDropdown" position="440 260" size="200 30" />
+
+        <GuiElement type="text" profile="text_white" text="CoursePlay Course:" position="440 200" />
+        <GuiElement type="comboBox" profile="comboBox" name="cpCourseDropdown" position="440 160" size="200 30" />
+
+        <!-- File operations -->
+        <GuiElement type="button" profile="button" name="saveButton" text="Save List" position="20 50" />
+        <GuiElement type="button" profile="button" name="loadButton" text="Load List" position="120 50" />
+
+        <!-- Vehicle operations -->
+        <GuiElement type="button" profile="button" name="assignButton" text="Assign to Vehicle" position="500 50" />
+        <GuiElement type="button" profile="button" name="startButton" text="Start" position="650 50" />
+
+        <!-- Close button -->
+        <GuiElement type="button" profile="button" name="closeButton" text="Close" position="700 560" />
+    </GuiElement>
+</GUI>
